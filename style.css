@@ -38,3 +38,20 @@ h6.subtitle{
   margin: 0px 0px;
 }
 
+#tribute-info{
+  justify-content: flex-start;
+}
+
+
+
+footer {
+  align-items: center;
+  margin: 100px 100px;
+  font-size: 18px;
+}
+
+footer a{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 10px;
+}
