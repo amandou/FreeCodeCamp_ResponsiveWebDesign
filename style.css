@@ -39,10 +39,23 @@ h6.subtitle{
 }
 
 #tribute-info{
-  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 50px;
 }
 
+#tribute-info p{
+  text-align:justify;
+  margin: 0 40px;  
+}
 
+#tribute-info ul{
+ text-align: justify; 
+}
+
+#tribute-info li{
+  margin: 30px 40px;
+}
 
 footer {
   align-items: center;
