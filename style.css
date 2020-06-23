@@ -27,10 +27,12 @@ h6.subtitle{
 }
 
 #image {
-  height: 500px;
-  width: 400px;
-  padding: 0px 0px;
-  margin: 0px 0px;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  max-width: 400px;
+  margin: auto;
+  display: block;
 }
 
 #img-caption{
@@ -45,7 +47,7 @@ h6.subtitle{
 }
 
 #tribute-info p{
-  text-align:justify;
+  text-align: justify;
   margin: 0 40px;  
 }
 
