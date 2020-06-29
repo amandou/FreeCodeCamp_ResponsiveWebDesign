@@ -2,30 +2,35 @@
 
 <html lang="pt_br">
     <head>
-        
+        <meta charset="UTF-8">
+        <title>Survey Form</title>  
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <h1 id="title">Some Text</h1>
-        <p id="description">Some description</p>
-        <form id="survey-form">
 
-             <!-- General information: Name, email, age and birthday -->
+    <body>
+        <div>
+            <h1 id="title">Survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <form id="survey-form">
+            <!-- General information: Name, email, age and birthday -->
             <label id="name-label" for="name"  form="survey-form">Name</label>
-            <input id="name" type="text" name="name" placeholder="Type your Name" required>
+            <input id="name" type="text" name="name" placeholder="Name" required><br>
 
             <label id="email-label" for="email"  form="survey-form">Email</label>
-            <input id="email" type="email" name="email" placeholder="Type your email" required>
+            <input id="email" type="email" name="email" placeholder="Email" required><br>
             
-            <label id="number-label" for="number"  form="survey-form">number</label>
-            <input id="number" type="number" name="number" placeholder="Type your age"
-            min="1" max="120" required pattern="[0-9]"> 
+            <label id="number-label" for="number"  form="survey-form">Age</label>
+            <input id="number" type="number" name="number" placeholder="Age"
+            min="1" max="120" required pattern="[0-9]"> <br>
 
             <label id="birthday-label" for="birthday" form="survey-form">Birthday</label>
             <input id="birthday" type="date" name="birthday" placeholder="mm/dd/yy" required>
 
-           
             <!-- Dropdown -->
-            <label id="dropdown-label" for="dropdown"></label>
+            <label id="dropdown-label" for="dropdown">Favorite Feature</label>
             <select id="dropdown" name="dropdown" form="survey-form" required>
                 <option value="opt1">Value1</option>
                 <option value="opt2">Value2</option>
@@ -33,6 +38,7 @@
 
             <!-- Ratio buttons -->
             <fieldset>
+              <p>How was your experience in FCC</p>
                 <label for="yes">Yes</label>    
                 <input type="radio" id="yes" name="question" value="yes">
                 
@@ -40,21 +46,18 @@
                 <input type="radio" id="no" name="question" value="no">
             </fieldset>
 
-
             <!-- Checkerboxes -->
             <fieldset>
+              <p>Witch features do you use?</p>
                 <label for="wifi">Wifi</label>    
                 <input type="checkbox" id="wifi" name="internet" value="wifi">
-                
                 
                 <label for="3g">3g</label>    
                 <input type="checkbox" id="3g" name="internet" value="3g">
                 
                 <label for="others">others</label>    
-                <input type="checkbox" id="others" name="internet" value="others">
-                
+                <input type="checkbox" id="others" name="internet" value="others"> 
             </fieldset>
-
 
              <!-- Comment Long Text -->
             <label id="comment-label" for="comment"  form="survey-form">Any comments?</label>
@@ -65,18 +68,9 @@
              <!-- Submit button -->
             <input id="submit" type="submit" name="submit">
         </form>
+
     </body>
 
 </html>
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-<!-- 
-
-Hello Camper!
-
-For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
-
-- The freeCodeCamp Team 
-
--->
