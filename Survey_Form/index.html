@@ -36,27 +36,37 @@
                 <option value="opt2">Value2</option>
             </select>
 
+            <!-- Checkerboxes -->
+            <fieldset>
+              <p>What kind of topics do you have more interest?</p>                
+                <input type="checkbox" id="front" name="topics" value="front">
+                <label for="front">Front-end</label><br>
+                
+                <input type="checkbox" id="back" name="topics" value="back">
+                <label for="back">Back-end</label><br>
+
+                <input type="checkbox" id="machine" name="topics" value="machine"> 
+                <label for="machine">Machine Learning</label><br>
+                
+                <input type="checkbox" id="data" name="topics" value="data"> 
+                <label for="data">Data Science</label><br>
+                
+                <input type="checkbox" id="security" name="topics" value="security"> 
+                <label for="security">Security</label><br>
+
+                <input type="checkbox" id="others" name="topics" value="others"> 
+                <label for="others">Others</label>    
+
+            </fieldset>
+
             <!-- Ratio buttons -->
             <fieldset>
-                <p>How was your experience in FCC</p>      
+                <p>Would you like to subscribe in our newsletter</p>      
                 <input type="radio" id="yes" name="question" value="yes">
                 <label for="yes">Yes</label><br>
                   
                 <input type="radio" id="no" name="question" value="no">
                 <label for="no">No</label>
-            </fieldset>
-
-            <!-- Checkerboxes -->
-            <fieldset>
-              <p>Witch features do you use?</p>
-                <label for="wifi">Wifi</label>    
-                <input type="checkbox" id="wifi" name="internet" value="wifi">
-                
-                <label for="3g">3g</label>    
-                <input type="checkbox" id="3g" name="internet" value="3g">
-                
-                <label for="others">others</label>    
-                <input type="checkbox" id="others" name="internet" value="others"> 
             </fieldset>
 
              <!-- Comment Long Text -->
@@ -68,7 +78,5 @@
              <!-- Submit button -->
             <input id="submit" type="submit" name="submit">
         </form>
-
     </body>
-
 </html>
