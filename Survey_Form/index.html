@@ -9,74 +9,75 @@
     </head>
 
     <body>
-        <div>
+        <header>
             <h1 id="title">Survey form</h1>
             <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <div>
+            <form id="survey-form">
+                <!-- General information: Name, email, age and birthday -->
+                <label id="name-label" for="name"  form="survey-form">Name</label>
+                <input id="name" type="text" name="name" placeholder="Name" required>
+
+                <label id="email-label" for="email"  form="survey-form">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                
+                <label id="number-label" for="number"  form="survey-form">Age</label>
+                <input id="number" type="number" name="number" placeholder="Age"
+                min="1" max="120" required pattern="[0-9]">
+
+                <label id="birthday-label" for="birthday" form="survey-form">Birthday</label>
+                <input id="birthday" type="date" name="birthday" placeholder="mm/dd/yy" required>
+
+                <!-- Dropdown -->
+                <label id="dropdown-label" for="dropdown">Favorite Style Mode</label>
+                <select id="dropdown" name="dropdown" form="survey-form" required>
+                    <option value="light">Light mode</option>
+                    <option value="dark">Dark mode</option>
+                </select>
+
+                <!-- Checkerboxes -->
+                <fieldset>
+                <p>What kind of topics do you have more interest?</p>                
+                    <input type="checkbox" id="front" name="topics" value="front">
+                    <label for="front">Front-end</label><br>
+                    
+                    <input type="checkbox" id="back" name="topics" value="back">
+                    <label for="back">Back-end</label><br>
+
+                    <input type="checkbox" id="machine" name="topics" value="machine"> 
+                    <label for="machine">Machine Learning</label><br>
+                    
+                    <input type="checkbox" id="data" name="topics" value="data"> 
+                    <label for="data">Data Science</label><br>
+                    
+                    <input type="checkbox" id="security" name="topics" value="security"> 
+                    <label for="security">Security</label><br>
+
+                    <input type="checkbox" id="others" name="topics" value="others"> 
+                    <label for="others">Others</label>    
+
+                </fieldset>
+
+                <!-- Ratio buttons -->
+                <fieldset>
+                    <p>Would you like to subscribe in our newsletter</p>      
+                    <input type="radio" id="yes" name="question" value="yes">
+                    <label for="yes">Yes</label><br>
+                    
+                    <input type="radio" id="no" name="question" value="no">
+                    <label for="no">No</label>
+                </fieldset>
+
+                <!-- Comment Long Text -->
+                <label id="comment-label" for="comment"  form="survey-form">Any comments?</label>
+                <textarea id="comment" type="text" name="comment" placeholder="Comments or sugestions"
+                rows="5" cols="50" required>
+                </textarea>
+                
+                <!-- Submit button -->
+                <input id="submit" type="submit" name="submit">
+            </form>
         </div>
-
-        <form id="survey-form">
-            <!-- General information: Name, email, age and birthday -->
-            <label id="name-label" for="name"  form="survey-form">Name</label>
-            <input id="name" type="text" name="name" placeholder="Name" required><br>
-
-            <label id="email-label" for="email"  form="survey-form">Email</label>
-            <input id="email" type="email" name="email" placeholder="Email" required><br>
-            
-            <label id="number-label" for="number"  form="survey-form">Age</label>
-            <input id="number" type="number" name="number" placeholder="Age"
-            min="1" max="120" required pattern="[0-9]"> <br>
-
-            <label id="birthday-label" for="birthday" form="survey-form">Birthday</label>
-            <input id="birthday" type="date" name="birthday" placeholder="mm/dd/yy" required>
-
-            <!-- Dropdown -->
-            <label id="dropdown-label" for="dropdown">Favorite Feature</label>
-            <select id="dropdown" name="dropdown" form="survey-form" required>
-                <option value="opt1">Value1</option>
-                <option value="opt2">Value2</option>
-            </select>
-
-            <!-- Checkerboxes -->
-            <fieldset>
-              <p>What kind of topics do you have more interest?</p>                
-                <input type="checkbox" id="front" name="topics" value="front">
-                <label for="front">Front-end</label><br>
-                
-                <input type="checkbox" id="back" name="topics" value="back">
-                <label for="back">Back-end</label><br>
-
-                <input type="checkbox" id="machine" name="topics" value="machine"> 
-                <label for="machine">Machine Learning</label><br>
-                
-                <input type="checkbox" id="data" name="topics" value="data"> 
-                <label for="data">Data Science</label><br>
-                
-                <input type="checkbox" id="security" name="topics" value="security"> 
-                <label for="security">Security</label><br>
-
-                <input type="checkbox" id="others" name="topics" value="others"> 
-                <label for="others">Others</label>    
-
-            </fieldset>
-
-            <!-- Ratio buttons -->
-            <fieldset>
-                <p>Would you like to subscribe in our newsletter</p>      
-                <input type="radio" id="yes" name="question" value="yes">
-                <label for="yes">Yes</label><br>
-                  
-                <input type="radio" id="no" name="question" value="no">
-                <label for="no">No</label>
-            </fieldset>
-
-             <!-- Comment Long Text -->
-            <label id="comment-label" for="comment"  form="survey-form">Any comments?</label>
-            <textarea id="comment" type="text" name="comment" placeholder="Comments or sugestions"
-            rows="5" cols="50" required>
-            </textarea>
-            
-             <!-- Submit button -->
-            <input id="submit" type="submit" name="submit">
-        </form>
     </body>
 </html>
