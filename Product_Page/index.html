@@ -8,12 +8,11 @@
 
 <body>
     <header id="header">
-        <img id="header-img" src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1171&q=80">
+        <img id="header-img"
+            src="https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1171&q=80">
         <nav id="nav-bar">
             <a class="nav-link" href="#overview">Overview</a>
-
             <a class="nav-link" href="#syllabus">Syllabus</a>
-
             <a class="nav-link" href="#form">Enroll</a>
         </nav>
     </header>
@@ -29,31 +28,42 @@
                 Your browser does not support HTML video.
             </video>
         </div>
-        <div id="overview-text">
-            This course is for everyone. In the new world we live in, coding is a universally valuable skill, whether you're a scientist, artist, or a humanist. Algorithms are everywhere, and we all have to understand how they work.
-        </div>
+        <article id="overview-text">
+            This course is for everyone. In the new world we live in, coding is a universally valuable skill, whether
+            you're a scientist, artist, or a humanist. Algorithms are everywhere, and we all have to understand how they
+            work.
+        </article>
     </section>
 
     <h2>Syllabus</h2>
-    <div id="syllabus">
-        <ul>
-            <li>Introduction</li>
-            <li>Data Types</li>
-            <li>Flow of Control</li>
-            <li>Loops</li>
-            <li>Functions</li>
-            <li>Pointers</li>
-            <li>Arrays</li>
-            <li>Recursion</li>
-        </ul>
-    </div>
+    <section>
+
+        <article id="syllabus">
+            <ul>
+                <li>Introduction</li>
+                <li>Data Types</li>
+                <li>Flow of Control</li>
+                <li>Loops</li>
+                <li>Functions</li>
+                <li>Pointers</li>
+                <li>Arrays</li>
+                <li>Recursion</li>
+            </ul>
+        </article>
+    </section>
 
     <h2>Enroll</h2>
-    <form id="form" action="https://www.freecodecamp.org/email-submit">
-        <label for="email">Enter your email</label>
-        <input id="email" type="email" name="email" placeholder="youremail@email.com">
-        <input id="submit" type="submit">
-    </form>
+    <section>
+        <p>Start this course now, and C O N Q U E R the world :)</p>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="youremail@email.com">
+            <input id="submit" type="submit">
+        </form>
+    </section>
 </body>
 
 </html>
